@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chin-Hsien Yeh — Game &amp; AI Interaction Design</title>
+<meta name="description" content="Portfolio of Chin-Hsien Yeh — game designer and interaction designer working across game UI, AI-integrated prototypes, and playable systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="reticle" id="reticle" aria-hidden="true">
+  <div class="reticle-ring"></div>
+  <div class="reticle-tick tick-n"></div>
+  <div class="reticle-tick tick-e"></div>
+  <div class="reticle-tick tick-s"></div>
+  <div class="reticle-tick tick-w"></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- DESKTOP SIDE TOC -->
+<nav class="side-toc" id="sideToc" aria-label="Table of contents">
+  <a href="#top" class="side-toc-logo">C.YEH</a>
+  <div class="toc-scroll">
+    <ol class="toc-list">
+      <li><a href="#about" data-target="about"><span class="toc-num">01</span><span class="toc-label">About</span></a></li>
+      <li>
+        <a href="#experience" data-target="experience"><span class="toc-num">02</span><span class="toc-label">Experience</span></a>
+        <ol class="toc-sublist">
+          <li><a href="#exp-timeline" data-target="exp-timeline">Timeline</a></li>
+          <li><a href="#exp-toolkit" data-target="exp-toolkit">Toolkit</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#work" data-target="work"><span class="toc-num">03</span><span class="toc-label">Work</span></a>
+        <ol class="toc-sublist">
+          <li><a href="#case-neon" data-target="case-neon">Neon Salvage</a></li>
+          <li><a href="#case-nowhere" data-target="case-nowhere">Nowhere To Go</a></li>
+          <li><a href="#case-transfer" data-target="case-transfer">Transfer, Rebirth</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#more" data-target="more"><span class="toc-num">04</span><span class="toc-label">More</span></a>
+        <ol class="toc-sublist">
+          <li><a href="#more-hand" data-target="more-hand">Give Me a Hand</a></li>
+          <li><a href="#more-swamp" data-target="more-swamp">Swamp</a></li>
+          <li><a href="#more-growing" data-target="more-growing">Growing Link</a></li>
+          <li><a href="#more-course" data-target="more-course">Course Projects</a></li>
+          <li><a href="#more-graphic" data-target="more-graphic">Graphic Design</a></li>
+        </ol>
+      </li>
+      <li><a href="#contact" data-target="contact"><span class="toc-num">05</span><span class="toc-label">Contact</span></a></li>
+    </ol>
+  </div>
+  <div class="toc-foot">
+    <a href="mailto:15510079686@163.com"><span class="dot"></span> Available for hire</a>
+  </div>
+</nav>
+
+<!-- MOBILE TOP NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark">C.YEH</a>
+  <nav class="nav-links">
+    <a href="#about" data-label="01" data-target="about"><span>About</span></a>
+    <a href="#experience" data-label="02" data-target="experience"><span>Exp</span></a>
+    <a href="#work" data-label="03" data-target="work"><span>Work</span></a>
+    <a href="#more" data-label="04" data-target="more"><span>More</span></a>
+    <a href="#contact" data-label="05" data-target="contact"><span>Contact</span></a>
+  </nav>
+  <a href="mailto:15510079686@163.com" class="nav-cta"><span class="dot"></span> Hire</a>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg" id="heroBg">
+    <img src="assets/1.jpg" alt="" class="hero-photo" id="heroPhoto">
+    <div class="hero-scan" aria-hidden="true"></div>
+  </div>
+  <div class="hero-hud" aria-hidden="true">
+    <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow mono">// PORTFOLIO_2026</p>
+    <h1 class="hero-title">
+      <span class="line">CHIN-HSIEN</span>
+      <span class="line accent">YEH</span>
+    </h1>
+    <p class="hero-role">Game Designer <span class="sep">×</span> AI Interaction Designer</p>
+    <p class="hero-desc">Building playable worlds and AI-augmented prototypes — from roguelike UI systems to generative-AI installations. Currently exploring the space where game design meets applied AI.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary"><span>View Case Studies</span></a>
+      <a href="Chin_Hsien_Yeh_Resume .pdf" download class="btn btn-ghost"><span>Download Resume</span></a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true"><span>SCROLL</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- 01 ABOUT -->
+<section class="about" id="about">
+  <div class="section-head reveal">
+    <span class="section-index">01</span>
+    <h2>About</h2>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-portrait">
+      <div class="portrait-frame">
+        <img src="assets/hero/about-portrait.jpg" alt="Chin-Hsien Yeh standing beneath an indoor plant installation">
+        <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+      </div>
+      <div class="portrait-tag">TAIWAN → BEIJING → SINGAPORE</div>
+    </div>
+    <div class="about-copy">
+      <p class="about-lead">I'm a game designer and interaction designer with a background in digital media arts, currently based between Beijing and Singapore.</p>
+      <p>I graduated from Communication University of China with a degree in Digital Media Arts, and I'm currently continuing my studies in the GDAT programme at NTU. I love games — especially strategy RPGs, card games, and puzzle/mystery titles — and that love shows up directly in my work: most of my projects sit at the intersection of game systems and AI-driven interaction.</p>
+      <p>I've shipped several games and interactive installations that integrate AI features end-to-end, and lately I've been experimenting with using AI directly inside the game-making process itself. On the tool side, I work comfortably across Midjourney, Stable Diffusion, and ComfyUI for AI-assisted creation, and Unity, Unreal Engine 5, Processing, and TouchDesigner for building playable and interactive systems. On the visual side, my strongest craft is interface design — particularly game UI.</p>
+      <div class="about-facts">
+        <div class="fact"><span class="fact-label">EDUCATION</span><span class="fact-value">Communication University of China — BFA, Digital Media Arts<br>NTU — GDAT (current)</span></div>
+        <div class="fact"><span class="fact-label">FOCUS</span><span class="fact-value">Game UI / Systems Design · AI-Integrated Interaction · AIGC Workflows</span></div>
+        <div class="fact"><span class="fact-label">TOOLS</span><span class="fact-value">Midjourney · Stable Diffusion · ComfyUI · Unity · UE5 · Processing · TouchDesigner</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 EXPERIENCE (incl Toolkit) -->
+<section class="experience" id="experience">
+  <div class="section-head reveal">
+    <span class="section-index">02</span>
+    <h2>Experience</h2>
+    <p class="section-sub">Analytical range on the business and player-behavior side of games, and the toolkit behind every project.</p>
+  </div>
+
+  <div id="exp-timeline">
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date mono">2025.07 – 2025.12</div>
+        <div class="timeline-content">
+          <h4><a class="experience-link" href="https://www.leniu.com/" target="_blank" rel="noopener noreferrer" data-preview="assets/experience/leniu.png" data-site="Leniu Games" data-domain="leniu.com">Game Monetization Analyst — Guangzhou Leniu Software Technology<span class="experience-link-arrow" aria-hidden="true">↗</span></a></h4>
+          <p>Deep-played live titles to map player ecosystems; used Python and MySQL to track in-game indicators and report weekly. Designed monetization content proposals (gift packs, draw events) and produced competitor reports.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date mono">2024.09 – 2024.12</div>
+        <div class="timeline-content">
+          <h4><a class="experience-link" href="https://minihost.tuanjie.cn/help/en/docs/welcome/" target="_blank" rel="noopener noreferrer" data-preview="assets/experience/unity.png" data-site="Unity MiniHost" data-domain="minihost.tuanjie.cn">Game Operations Intern — Unity (Yousandi Technology, Shanghai)<span class="experience-link-arrow" aria-hidden="true">↗</span></a></h4>
+          <p>Evaluated the commercial viability of small/mid-studio games; supported in-game event tuning, telemetry review, and platform launch for client titles.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date mono">2024.07 – 2024.09</div>
+        <div class="timeline-content">
+          <h4><a class="experience-link" href="https://www.changyou.com/" target="_blank" rel="noopener noreferrer" data-preview="assets/experience/changyou.png" data-site="Sohu Changyou" data-domain="changyou.com">Game Operations Intern — Beijing Changyou Tianxia Network Technology (Sohu Games)<span class="experience-link-arrow" aria-hidden="true">↗</span></a></h4>
+          <p>Supported new-product incubation; monitored Steam market trends, ran competitive research, and synthesized user-review sentiment into structured pain/delight-point reports and full game system breakdowns.</p>
+        </div>
+      </div>
+    </div>
+    <aside class="experience-site-preview" id="experienceSitePreview" aria-hidden="true">
+      <div class="site-preview-bar">
+        <span class="site-preview-status"><span class="site-preview-dot"></span> WEBSITE PREVIEW</span>
+        <span class="site-preview-domain" id="sitePreviewDomain"></span>
+      </div>
+      <div class="site-preview-image-wrap">
+        <img id="sitePreviewImage" alt="">
+      </div>
+      <div class="site-preview-caption">
+        <span id="sitePreviewName"></span>
+        <span aria-hidden="true">↗</span>
+      </div>
+    </aside>
+  </div>
+
+  <div class="game-taste reveal">
+    <h4 class="mono">// PLAYER PROFILE</h4>
+    <p class="game-taste-lead">1000+ hours across strategy RPGs, TCGs, and narrative puzzle games — the analytical backbone behind every UI and systems decision in this portfolio.</p>
+    <div class="tag-cloud">
+      <span class="tag tag-lg">Onmyoji · 1069 days</span>
+      <span class="tag tag-lg">Arknights · 2 years</span>
+      <span class="tag tag-lg">Reverse:1999</span>
+      <span class="tag">Genshin Impact</span>
+      <span class="tag">Cyberpunk 2077</span>
+      <span class="tag">Detroit: Become Human</span>
+      <span class="tag">Ace Attorney 1–3</span>
+      <span class="tag">Black Myth: Wukong</span>
+      <span class="tag">Cultist Simulator</span>
+      <span class="tag">Slay the Spire</span>
+      <span class="tag">Rusty Lake series</span>
+      <span class="tag">Inside</span>
+      <span class="tag">Honor of Kings</span>
+      <span class="tag">Fall Guys</span>
+    </div>
+  </div>
+
+  <div class="toolkit reveal" id="exp-toolkit">
+    <h4 class="mono">// TOOLKIT</h4>
+    <div class="skills-grid">
+      <div class="skill-col">
+        <h5>AI &amp; Generative</h5>
+        <ul><li>Midjourney</li><li>Stable Diffusion</li><li>ComfyUI</li><li>Runway AI</li><li>Suno AI</li></ul>
+      </div>
+      <div class="skill-col">
+        <h5>Game &amp; Interaction</h5>
+        <ul><li>Unity Engine</li><li>Unreal Engine 5</li><li>TouchDesigner</li><li>Processing</li><li>Arduino</li></ul>
+      </div>
+      <div class="skill-col">
+        <h5>Design</h5>
+        <ul><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>Premiere Pro</li><li>After Effects</li></ul>
+      </div>
+      <div class="skill-col">
+        <h5>Code &amp; Data</h5>
+        <ul><li>Python</li><li>C#</li><li>MySQL</li><li>HTML / CSS / JS</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 WORK -->
+<section class="work-head" id="work">
+  <div class="section-head reveal">
+    <span class="section-index">03</span>
+    <h2>Featured Work</h2>
+    <p class="section-sub">Three deep-dive case studies spanning game UI design, playable-demo direction, and AI-integrated interaction systems.</p>
+  </div>
+</section>
+
+<!-- CASE 1: NEON SALVAGE -->
+<div class="cover cover-layered" id="cover-neon">
+  <div class="cover-bg">
+    <img src="assets/neon/game-cover.jpg" alt="" class="cover-photo cover-photo-base">
+    <img src="assets/neon/game-cover.jpg" alt="" class="cover-photo cover-photo-blur" aria-hidden="true">
+  </div>
+  <div class="cover-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <div class="cover-content">
+    <p class="cover-eyebrow mono">WORK — 01 · GAME UI / ROGUELIKE SYSTEMS</p>
+    <h3 class="cover-title">CYBERPUNK:<br>NEON SALVAGE</h3>
+    <p class="cover-tagline">A full UI/UX design cycle for a roguelike deck-builder set in Night City.</p>
+  </div>
+  <div class="cover-scroll mono">SCROLL</div>
+</div>
+<section class="case-wrap">
+  <article class="case-intro" id="case-neon">
+    <div class="case-intro-meta reveal">
+      <span class="case-index">CASE STUDY 01</span>
+      <div class="meta-row"><span class="meta-label">ROLE</span><span class="meta-value">Solo Project</span></div>
+      <div class="meta-row"><span class="meta-label">TIMELINE</span><span class="meta-value">2024.09 – 2025.06</span></div>
+      <div class="meta-row"><span class="meta-label">FOCUS</span><span class="meta-value">Game UI / Roguelike Systems</span></div>
+      <div class="case-tags">
+        <span class="tag">Game UI Design</span><span class="tag">Roguelike Systems</span><span class="tag">Competitive Analysis</span><span class="tag">Multi-platform</span><span class="tag">Figma</span>
+      </div>
+    </div>
+    <div class="case-intro-text reveal">
+      <h3>Overview</h3>
+      <p>A 2D anime-style side-scrolling roguelike deck-builder set in the world of <em>Cyberpunk 2077</em>, envisioned as a mobile extension of the IP after its main narrative concludes. Players lead a squad through the "Restricted Zone," uncovering the hidden truths that made it forbidden.</p>
+      <p>I owned the full UI/UX design cycle solo — from competitive analysis of <em>Onmyoji</em>, <em>Reverse:1999</em>, and <em>Arknights</em> roguelike loops, through low-fidelity flow diagrams, to a complete high-fidelity interaction system covering every button state (default / hover / pressed / focus / inactive) across main menu, character equip, map exploration, and turn-based combat. The UI was tested and iterated across iPad, iPhone, and desktop breakpoints based on real on-device usability feedback.</p>
+    </div>
+  </article>
+
+  <div class="case-gallery grid-4">
+    <figure><div class="fig-frame"><img src="character.jpg" alt="Neon Salvage character equip screen" loading="lazy"></div><figcaption class="mono">Character / Cyberware</figcaption></figure>
+    <figure><div class="fig-frame"><img src="mainmanu.jpg" alt="Neon Salvage main menu UI" loading="lazy"></div><figcaption class="mono">Main Menu</figcaption></figure>
+    <figure><div class="fig-frame"><img src="turn-base.jpg" alt="Neon Salvage combat screen" loading="lazy"></div><figcaption class="mono">Turn-based Combat</figcaption></figure>
+    <figure><div class="fig-frame"><img src="Upper.jpg" alt="Neon Salvage node map screen" loading="lazy"></div><figcaption class="mono">Upper / Lower City Map</figcaption></figure>
+  </div>
+
+  <div class="case-gallery grid-3">
+    <figure><div class="fig-frame"><img src="P2-3.jpg" alt="Neon Salvage low-fidelity gameplay flow" loading="lazy"></div><figcaption class="mono">Low-Fidelity Gameplay Overview</figcaption></figure>
+    <figure><div class="fig-frame"><img src="P2-4.jpg" alt="Neon Salvage multi-platform adaptation and user feedback" loading="lazy"></div><figcaption class="mono">Low-Fidelity Gameplay Overview</figcaption></figure>
+    <figure><div class="fig-frame"><img src="P2-6.jpg" alt="Neon Salvage high-fidelity button states" loading="lazy"></div><figcaption class="mono">High-Fidelity Interaction Spec</figcaption></figure>
+  </div>
+</section>
+
+<!-- CASE 2: NOWHERE TO GO -->
+<div class="cover cover-layered" id="cover-nowhere">
+  <div class="cover-bg">
+    <img src="assets/covers/nowhere.jpg" alt="" class="cover-photo cover-photo-base">
+    <img src="assets/covers/nowhere.jpg" alt="" class="cover-photo cover-photo-blur" aria-hidden="true">
+  </div>
+  <div class="cover-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <div class="cover-content">
+    <p class="cover-eyebrow mono">WORK — 02 · GAME DEMO DESIGN / VR</p>
+    <h3 class="cover-title">NOWHERE<br>TO GO<span class="cover-cn">何以为家</span></h3>
+    <p class="cover-tagline">A climate-crisis narrative game — rebuilt from screen to VR after playtesting.</p>
+  </div>
+  <div class="cover-scroll mono">SCROLL</div>
+</div>
+<section class="case-wrap">
+  <article class="case-intro" id="case-nowhere">
+    <div class="case-intro-meta reveal">
+      <span class="case-index">CASE STUDY 02</span>
+      <div class="meta-row"><span class="meta-label">ROLE</span><span class="meta-value">Team Lead · Group Project</span></div>
+      <div class="meta-row"><span class="meta-label">TIMELINE</span><span class="meta-value">2021 – 2025</span></div>
+      <div class="meta-row"><span class="meta-label">FOCUS</span><span class="meta-value">Game Demo Design / VR</span></div>
+      <div class="case-tags"><span class="tag">Unity</span><span class="tag">VR Interaction Design</span><span class="tag">Narrative Systems</span><span class="tag">Team Leadership</span></div>
+    </div>
+    <div class="case-intro-text reveal">
+      <h3>Overview</h3>
+      <p>A 3D interactive narrative serious game about climate crisis. Players take on the role of a small island's chief, gathering information, completing quests, and managing scarce resources before a devastating storm arrives — with three possible endings shaped entirely by the player's decisions.</p>
+      <p>I served as team lead, responsible for game design and technical setup in Unity, including scene/prefab construction and core scripting. After our first playtest, users asked for a more embodied experience — so we rebuilt the interaction model for VR from the ground up: redesigned spatial UI, rebuilt environments, and new movement rules governed by explicit ergonomic guidelines for headset viewing distance and comfort.</p>
+      <p><a href="https://www.bilibili.com/video/BV1DD421u7Nx/?share_source=copy_web&vd_source=38e1ff7c4ddd4265b200e20df79e5a77" target="_blank" rel="noopener" class="demo-link">Watch Gameplay Demo →</a></p>
+    </div>
+  </article>
+  <div class="case-gallery grid-4">
+    <figure><div class="fig-frame"><img src="image 192.jpg" alt="Nowhere To Go gameplay screenshot 1" loading="lazy"></div><figcaption class="mono">Game Scene 1</figcaption></figure>
+    <figure><div class="fig-frame"><img src="image 194.jpg" alt="Nowhere To Go gameplay screenshot 2" loading="lazy"></div><figcaption class="mono">Game Scene 2</figcaption></figure>
+    <figure><div class="fig-frame"><img src="image 195.png" alt="Nowhere To Go gameplay screenshot 3" loading="lazy"></div><figcaption class="mono">Game Scene 3</figcaption></figure>
+    <figure><div class="fig-frame"><img src="image 193.jpg" alt="Nowhere To Go gameplay screenshot 4" loading="lazy"></div><figcaption class="mono">Game Scene 4</figcaption></figure>
+  </div>
+</section>
+
+<!-- CASE 3: TRANSFER, REBIRTH -->
+<div class="cover cover-layered" id="cover-transfer">
+  <div class="cover-bg">
+    <img src="assets/covers/transfer.png" alt="" class="cover-photo cover-photo-base">
+    <img src="assets/covers/transfer.png" alt="" class="cover-photo cover-photo-blur" aria-hidden="true">
+  </div>
+  <div class="cover-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <div class="cover-content">
+    <p class="cover-eyebrow mono">WORK — 03 · AIGC · EEG · INSTALLATION ART</p>
+    <h3 class="cover-title">TRANSFER,<br>REBIRTH<span class="cover-cn">自我的重构</span></h3>
+    <p class="cover-tagline">An EEG-driven generative AI installation that reads emotion and redraws the face.</p>
+  </div>
+  <div class="cover-scroll mono">SCROLL</div>
+</div>
+<section class="case-wrap">
+  <article class="case-intro" id="case-transfer">
+    <div class="case-intro-meta reveal">
+      <span class="case-index">CASE STUDY 03</span>
+      <div class="meta-row"><span class="meta-label">ROLE</span><span class="meta-value">Group Project</span></div>
+      <div class="meta-row"><span class="meta-label">TIMELINE</span><span class="meta-value">2024.09 – 2025.06</span></div>
+      <div class="meta-row"><span class="meta-label">FOCUS</span><span class="meta-value">AIGC · EEG · Installation Art</span></div>
+      <div class="case-tags"><span class="tag">ComfyUI</span><span class="tag">TouchDesigner</span><span class="tag">EEG / NeuroSky</span><span class="tag">Mediapipe</span><span class="tag">Generative AI Pipeline</span></div>
+    </div>
+    <div class="case-intro-text reveal">
+      <h3>Overview</h3>
+      <p>An AIGC-driven EEG interaction installation exploring emotional somatization — how suppressed feelings surface as physical symptoms. The system reads a user's brainwave signals, calculates real-time arousal and valence, and uses generative AI to redraw the user's face into an exaggerated emotional mask that the user then has to physically perform to "unlock."</p>
+      <p>My contribution spanned the full generative pipeline: EEG signal capture via a NeuroSky sensor, an arousal/valence scoring model in Python, a live ComfyUI portrait-generation workflow embedded in TouchDesigner, and Mediapipe-based facial-landmark matching to evaluate whether the user's expression matched the AI-generated target. We iterated through three prototypes — moving from a fragile Sichuan-opera-inspired face-changing gesture to a simple hand-grasp toggle — and exhibited the final installation with a live photo-print station.</p>
+    </div>
+  </article>
+  <div class="case-gallery grid-3">
+    <figure><div class="fig-frame"><img src="assets/transfer/design_process.jpg" alt="Transfer Rebirth design process and data pipeline" loading="lazy"></div><figcaption class="mono">EEG → AI Generation Pipeline</figcaption></figure>
+    <figure><div class="fig-frame"><img src="assets/transfer/prototypes.jpg" alt="Transfer Rebirth prototype iterations" loading="lazy"></div><figcaption class="mono">Prototype 1.0 – 3.0</figcaption></figure>
+    <figure><div class="fig-frame"><img src="assets/transfer/exhibition.jpg" alt="Transfer Rebirth final exhibition and user feedback" loading="lazy"></div><figcaption class="mono">Final Exhibition &amp; User Feedback</figcaption></figure>
+  </div>
+</section>
+
+<!-- 04 MORE -->
+<section class="more-head" id="more">
+  <div class="section-head reveal">
+    <span class="section-index">04</span>
+    <h2>More Work</h2>
+    <p class="section-sub">AI-assisted CG production, service design, and course projects.</p>
+  </div>
+</section>
+
+<!-- MORE: GIVE ME A HAND -->
+<div class="cover cover-banner cover-layered" id="cover-hand">
+  <div class="cover-bg">
+    <img src="assets/covers/hand.png" alt="" class="cover-photo cover-photo-base">
+    <img src="assets/covers/hand.png" alt="" class="cover-photo cover-photo-blur" aria-hidden="true">
+  </div>
+  <div class="cover-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <div class="cover-content">
+    <p class="cover-eyebrow mono">MORE — SOLO · PHYSICAL COMPUTING / ARDUINO</p>
+    <h3 class="cover-title">GIVE ME<br>A HAND</h3>
+  </div>
+</div>
+<section class="case-wrap">
+  <article class="mini-intro" id="more-hand">
+    <div class="reveal">
+      <p class="mini-meta">2024.09 – 2025.06</p>
+      <h3>Give Me a Hand</h3>
+      <p>A desktop smart accessory that supports users through moments of acute anxiety. Built around a GSR sensor, heart-rate sensor, and force-sensing resistor wired to an Arduino UNO, the device reads skin conductance, heart rate, and blood oxygen to detect rising stress. When stress crosses a threshold, an LED-lit hand invites interaction; once held, it shifts color and plays calming music, interrupting the anxiety cycle through touch rather than another screen.</p>
+      <div class="case-tags"><span class="tag">Arduino</span><span class="tag">Sensor Fusion</span><span class="tag">Physical Prototyping</span><span class="tag">Wellbeing Design</span></div>
+    </div>
+  </article>
+  <div class="case-gallery grid-3">
+    <figure><div class="fig-frame"><img src="7.jpg" alt="Give Me a Hand prototype 1" loading="lazy"></div><figcaption class="mono">Prototype Development</figcaption></figure>
+    <figure><div class="fig-frame"><img src="8.jpg" alt="Give Me a Hand prototype 2" loading="lazy"></div><figcaption class="mono">Sensor Integration</figcaption></figure>
+    <figure><div class="fig-frame"><img src="9.jpg" alt="Give Me a Hand final build" loading="lazy"></div><figcaption class="mono">Final Build</figcaption></figure>
+  </div>
+</section>
+
+<!-- MORE: SWAMP -->
+<div class="cover cover-banner cover-layered" id="cover-swamp">
+  <div class="cover-bg">
+    <img src="assets/covers/swamp.png" alt="" class="cover-photo cover-photo-base">
+    <img src="assets/covers/swamp.png" alt="" class="cover-photo cover-photo-blur" aria-hidden="true">
+  </div>
+  <div class="cover-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <div class="cover-content">
+    <p class="cover-eyebrow mono">MORE — BYTEDANCE JIANGNAN STUDIO WORKSHOP · AI CG</p>
+    <h3 class="cover-title">SWAMP<span class="cover-cn">沼泽</span></h3>
+  </div>
+</div>
+<section class="case-wrap">
+  <article class="mini-intro" id="more-swamp">
+    <div class="reveal">
+      <p class="mini-meta">Solo · ByteDance × CUC Summer Workshop</p>
+      <h3>Swamp</h3>
+      <p>Swamp was developed during the summer workshop "Planet: Reboot — 42 Visions of the Future" a collaborative program between ByteDance Jiangnan Studio and the Communication University of China. The project explored game content planning and CG creation using AI tools. The game is a first-person action role-playing game (ARPG) in which players progress through different levels to unlock story content and combat encounters, complete a series of missions, and advance the narrative. For asset generation, ComfyUI and Suno AI were used to assist in image and audio creation.</p>
+      <div class="case-tags"><span class="tag">Midjourney</span><span class="tag">ComfyUI</span><span class="tag">AI Art Pipeline</span><span class="tag">Game UI</span></div>
+    </div>
+  </article>
+  <div class="case-gallery grid-1">
+    <figure><div class="fig-frame no-border"><img src="other work3.jpg" alt="Swamp game design overview" loading="lazy"></div><figcaption class="mono">Game UI Design &amp; Story Overview</figcaption></figure>
+  </div>
+</section>
+
+<!-- MORE: GROWING LINK -->
+<div class="cover cover-banner cover-layered" id="cover-growing">
+  <div class="cover-bg">
+    <img src="assets/covers/growing.png" alt="" class="cover-photo cover-photo-base">
+    <img src="assets/covers/growing.png" alt="" class="cover-photo cover-photo-blur" aria-hidden="true">
+  </div>
+  <div class="cover-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <div class="cover-content">
+    <p class="cover-eyebrow mono">MORE — SOLO · SERVICE DESIGN / UX RESEARCH</p>
+    <h3 class="cover-title">GROWING<br>LINK</h3>
+  </div>
+</div>
+<section class="case-wrap">
+  <article class="mini-intro" id="more-growing">
+    <div class="reveal">
+      <p class="mini-meta">Solo · Service Design · UX Research</p>
+      <h3>Growing Link</h3>
+      <p>An app that helps elderly users living alone re-engage with daily life through plant care, paired with a family-facing "Harbor" feed so relatives can stay gently updated. Designed dual Family/Senior interaction modes, an AI-assisted plant-recognition camera flow, and a full information architecture across Home, Harbor, Camera, and Explore.</p>
+      <div class="case-tags"><span class="tag">Service Design</span><span class="tag">UX Research</span><span class="tag">AI Recognition</span><span class="tag">Information Architecture</span></div>
+    </div>
+  </article>
+  <div class="case-gallery grid-1">
+    <figure><div class="fig-frame no-border"><img src="12.jpg" alt="Growing Link app design overview" loading="lazy"></div><figcaption class="mono">App Design System & User Flow</figcaption></figure>
+  </div>
+</section>
+
+<!-- MORE: COURSE PROJECTS -->
+<div class="cover cover-banner cover-layered" id="cover-course">
+  <div class="cover-bg">
+    <img src="assets/covers/course.png" alt="" class="cover-photo cover-photo-base">
+    <img src="assets/covers/course.png" alt="" class="cover-photo cover-photo-blur" aria-hidden="true">
+  </div>
+  <div class="cover-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <div class="cover-content">
+    <p class="cover-eyebrow mono">MORE — COURSE PROJECTS · UE5 · UNITY · ARDUINO</p>
+    <h3 class="cover-title">COURSE<br>PROJECTS</h3>
+  </div>
+</div>
+<section class="case-wrap">
+  <article class="mini-intro" id="more-course">
+    <div class="reveal">
+      <p class="mini-meta">Course Projects · UE5 · Unity · Arduino</p>
+      <h3>Chill Quest For Survival</h3>
+      <p>A battle-royale-style first-person adventure built in UE5's Blueprint system, where players manage a continuously draining health bar under an "Extreme Cold Curse" to rescue a healer from a cursed town.</p>
+      <div class="case-tags"><span class="tag">Unreal Engine 5</span><span class="tag">Blueprints</span></div>
+    </div>
+  </article>
+  <div class="case-gallery grid-1">
+    <figure><div class="fig-frame no-border"><img src="other work4.jpg" alt="Chill Quest For Survival game overview" loading="lazy"></div><figcaption class="mono">Game Scenes & Development</figcaption></figure>
+  </div>
+  <article class="mini-intro">
+    <div class="reveal">
+      <p class="mini-meta">Course Project · Unity · Arduino</p>
+      <h3>When They Became Stars</h3>
+      <p>A third-person physical-interactive exploration game where a real Arduino distance sensor, wired into a cat-wand prop, controls an in-game cat's jumps — set in a magical world where a witch guides wandering cat souls back into stars.</p>
+      <div class="case-tags"><span class="tag">Unity</span><span class="tag">Arduino</span><span class="tag">Physical Interaction</span></div>
+    </div>
+  </article>
+  <div class="case-gallery grid-1">
+    <figure><div class="fig-frame no-border"><img src="other work5.jpg" alt="When They Became Stars game overview" loading="lazy"></div><figcaption class="mono">Game Scenes & Development</figcaption></figure>
+  </div>
+</section>
+
+<!-- MORE: GRAPHIC DESIGN -->
+<section class="case-wrap">
+  <div class="graphic-strip reveal" id="more-graphic">
+    <h4 class="mono">// GRAPHIC &amp; CAMPAIGN DESIGN</h4>
+    <p>Visual design work from my role as Publicity Director of the CUC Student Union's all-media team — banners, push-article layouts, and posters across 40+ published pieces, growing average readership by ~50% year-on-year.</p>
+  </div>
+</section>
+<div class="case-gallery grid-1 full-bleed">
+  <figure><div class="fig-frame no-border"><img src="Slide 16_9 - 1.jpg" alt="Graphic design portfolio collection" loading="lazy"></div></figure>
+</div>
+
+<!-- 05 CONTACT -->
+<footer class="contact" id="contact">
+  <div class="contact-hud" aria-hidden="true"><span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span></div>
+  <p class="contact-eyebrow mono">// END_OF_FILE</p>
+  <h2>Let's build something<br>playable together.</h2>
+  <div class="contact-links">
+    <a href="mailto:15510079686@163.com" class="contact-link"><span class="contact-label mono">EMAIL</span><span class="contact-value">15510079686@163.com</span></a>
+    <a href="mailto:YEHC0002@e.ntu.edu.sg" class="contact-link"><span class="contact-label mono">NTU EMAIL</span><span class="contact-value">YEHC0002@e.ntu.edu.sg</span></a>
+    <a href="tel:+8615510079686" class="contact-link"><span class="contact-label mono">PHONE</span><span class="contact-value">+86 155 1007 9686</span></a>
+    <a href="https://www.figma.com/design/BVVc530pLxY7vAqzYR8M6F/Portfolio?m=auto&t=GBRo0msSA2jAfPrF-6" target="_blank" rel="noopener" class="contact-link"><span class="contact-label mono">FULL ARCHIVE</span><span class="contact-value">Figma Portfolio ↗</span></a>
+  </div>
+  <div class="contact-foot mono"><span>© 2026 CHIN-HSIEN YEH</span><span>BASED IN TAIWAN / SINGAPORE</span></div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <img alt="" id="lightboxImg">
+  <div class="lightbox-hint mono">SCROLL TO ZOOM · DRAG TO PAN · CLICK OR ESC TO CLOSE</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
