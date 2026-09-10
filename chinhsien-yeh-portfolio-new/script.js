@@ -330,4 +330,25 @@
   window.addEventListener("resize", syncTOC, { passive:true });
   syncTOC();
 
+  /* ---------------- Resume language dropdown ---------------- */
+  var resumeDropdown = document.getElementById("resumeDropdown");
+  var resumeToggle = document.getElementById("resumeDropdownToggle");
+  if (resumeDropdown && resumeToggle) {
+    function closeResumeDropdown(){
+      resumeDropdown.classList.remove("open");
+      resumeToggle.setAttribute("aria-expanded", "false");
+    }
+    resumeToggle.addEventListener("click", function(e){
+      e.stopPropagation();
+      var isOpen = resumeDropdown.classList.toggle("open");
+      resumeToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+    document.addEventListener("click", function(e){
+      if (!resumeDropdown.contains(e.target)) closeResumeDropdown();
+    });
+    document.addEventListener("keydown", function(e){
+      if (e.key === "Escape") closeResumeDropdown();
+    });
+  }
+
 })();
